@@ -13,12 +13,11 @@ import java.util.List;
 @Controller
 @RequiredArgsConstructor
 public class HtmlController {
-
     private  final PostService postService;
-
-    @GetMapping
+    @GetMapping("/")
     // springframework.ui.Model
     public String 메인페이지(Model model){
+        // 풀스택 개발자는 이렇게 하는게 맞음
         model.addAttribute(
                 "posts",
                 postService.모두조회()

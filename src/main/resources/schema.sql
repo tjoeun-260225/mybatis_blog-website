@@ -3,13 +3,22 @@
 -- statement #2
 -- #1
 
-DROP TABLE IF EXISTS  posts;
+DROP TABLE IF EXISTS posts;
 
 -- AUTOINCREMENT sqlite 의 경우 _ 를 제거해서 사용
-CREATE TABLE IF NOT EXISTS posts (
-    id      INTEGER PRIMARY KEY  AUTOINCREMENT,
+CREATE TABLE IF NOT EXISTS posts
+(
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
     title   varchar(100) not null,
     content TEXT         NOT NULL
+
+);
+
+CREATE TABLE IF NOT EXISTS users
+(
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+    name    varchar(100) not null,
+    email   TEXT         NOT NULL
 
 );
 

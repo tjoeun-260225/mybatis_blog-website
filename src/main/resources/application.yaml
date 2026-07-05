@@ -6,7 +6,10 @@ spring:
     driver-class-name: org.sqlite.JDBC
   sql:
     init:
-      mode: always
+      mode: always # 이 문장이 존재하면 resources 내에 있는 sql
+      # 을 읽어 자동으로 table 생성~ data 추가 수정 삭제 기재되어 있는
+      # sql 코드를 자동으로 실행한다.
+
 mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:
@@ -22,3 +25,4 @@ logging:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} %msg%n"
   file:
     name: logs/app.log
+

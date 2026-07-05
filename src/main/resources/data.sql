@@ -6,3 +6,10 @@ VALUES ('첫 번째 글','안녕하세요');
 
 INSERT  INTO  posts (title, content)
 VALUES ('두 번째 글','mybatis로 연습 중 입니다.');
+
+
+INSERT  INTO  users (name, email)
+VALUES ('홍길동','gildong@email.com');
+
+INSERT  INTO  users (name, email)
+VALUES ('김영희','younghee@email.com');
