@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+<?xml version="1.0" encoding="utf-8" ?>
+이 파일은 xml 문서이고 XML 버전은 1.0 이며, 문자 인코딩은 UTF-8 이다.
+라는 표준 XML 파일의 첫 줄
+한글이 깨지지 않도록 UTF-8로 설정
+모든 XML 파일에 관례적으로 들어가는 선언 특별한 의미 보다는 약속 형태로 사용
+springboot를 만들 때 gradle 로 세팅하여 만들고 있지만,
+추후 pom.xml maven 세팅을 하게 되면 제일 많이 보게되는 구문
+
+
+<!DOCTYPE mapper  이 문서는 mabatis에서 정한 mapper 문법 규칙을 따른다는 선언
+        PUBLIC "-//mybatis.org//DTD  DTD = Document Type Definition
+                                           이 XML 에서 어떤 태그를 쓸 수 있고,
+                                           어떻게 구조를 짜야하는지 정의해놓은 규격서
+
+        Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+        이게 있어야 select, insert, update, delete 같은 태그를 Mybatis가 인식하고
+        파싱할 수 있다.
+
+        mybatis-3-mapper.dtd 은 실제로 인터넷에서 매번 다운받는 게 아니라
+        springboot 에서 build.gradle 로 가져온 mybatis 라이브러리 안에
+        이미 내장되어 있어서 인터넷이 연결되어 있지 않은 환경에서도 개발 가능
+-->
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+mybatis 에서 연결할 자바 파일을 설정할 때
+java 폴더 구조에서 mapper.java 까지 만들어 준 후 연결하면 자동완성으로
+폴더 선택을 할 수 있으므로 되도록이면 자바에서 mapper.java 까지 만들어준 다음에
+mapper.xml에서 sql구문을 작성하는 것이 폴더구조나 오타방지하는데 효과적이다.
+
+namespace="com.project.mybatis_blogwebsite.mapper.PostMapper"
+현재 PostMapper.xml 은 위 경로로 존재하는 자바 파일과 1:1로 매칭하여 사용하겠다.
+설정
+
+PostMapper.java (인터페이스, 메서드 이름만 정의)
+    ↓ namespace로 연결됨
+PostMapper.xml (실제 SQL 작성)
+
+Service 에서 postMapper.findAll() 과 같은 기능을 호출
+    ↓
+MyBatis가 namespace 로 XML 찾아감
+    ↓
+<select id="findAll"> 태그의 SQL을 실행하서 결과 반환
+
+-->
+<mapper namespace="com.project.mybatis_blogwebsite.mapper.PostMapper">
+    <select id="모두조회">
+        SELECT id, title, content FROM posts
+    </select>
+</mapper>

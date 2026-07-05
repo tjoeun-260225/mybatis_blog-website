@@ -1,0 +1,80 @@
+spring:
+  application:
+    name: mybatis_blog-website
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console # Database 전체 구조 확인 가능 api
+  sql:
+    init:
+      mode: always   # 스프링부트가 시작할 때 schema.sql 이나
+                                              data.sql 같은
+                                              SQL 초기화 스크립트를 실행할지 말지
+                                              언제 실행할지 정하는 설정
+           always   = DB 종류와 상관없이 항상 실행
+           embedded = H2, HSQLDB 같은 내장 메모리 DB 일 때만 실행
+                      (회사SQL에 영향을 주지 않는 db에서만 실행)
+                      보통의 기본값으로 적용되어 있다.
+           never    = 절대 실행 안함
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+        # classpath src/main/resources 의 줄임말
+        # classpath:mapper/                        *.xml
+        # src/main/resources/mapper 폴더 안에 들어있는 모든 xml 확장자 파일을 인식
+  configuration:
+    map-underscore-to-camel-case: true
+    # DB컬럼이름(스네이크케이스) ↔ 자바 필드이름(카멜케이스)를 자동으로 변환해서
+    # 사용하겠다 설정
+    # DB컬럼이름은 대소문자 구분을 하지 못하기 때문에 스네이크 케이스로
+    # 컬럼명칭을 지정
+    # post_title 과 같이 많이 표기
+    # 자바 필드는 보통 카멜케이스로 많이 작성
+    # post_title  == postTitle 과 서로 같은 컬럼이름을 바라본다 자동 변환 설정을
+    # 해주겠다 한 것
+
+로그
+- 일지
+- 프로그램이 실행되면서 어떤 일이 일어났는지 시간 순서대로
+  회사 서버에 남기는 기록을 실시간 파일로 저장해서 회사는보관한다.
+- 프로그램은 눈에 안보이게 계속 실행된다.
+  그런데 어떤 문제가 생기면
+    지금 이순간 뭐 잘못됐지? 눈으로 볼 방법이 없음
+    그래서 프로그램이 스스로 지금 이런 일을 하고 있어요. 기록을 남겨두는 것
+로그 레벨
+
+trace < debug < info < warn < error
+레벨을 debug 로 주면 debug 이상 이 다 출력되고
+       info  로 주면 trace debug 는 무시된채 info 이상만 보인다.
+
+logging:
+  level:
+    root: info    # 전체 프로젝트에서 기본 로그 레벨 값 설정
+                    root는 프로젝트 전체에 적용되는 최상위 기본 설정
+                    info 레벨 이상만 출력하겠다는 뜻
+    com.project.mybatis_blogwebsite: debug
+                  # 내가 작성한 프로젝트 패키지만 따로 debug 레벨로 더 자세히 보이게 설정
+                    root 보다 더 구체적인 패키지 지정이 우선 적용된다.
+    org.mybatis: debug
+                  # MyBatias 라이브러리 자체의 내부 동작로그를 debug킴
+                    매퍼가 잘 스캔되었는지, 어떤 SQL이 실행준비중인지
+                    볼 수 있다.
+    org.springframework.jdbc: debug
+                 # JAVA - SQL 연결관련 로그를 확인하기 위해 설정
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} %msg%n"
+    콘솔에 로그가 출력되는 형식 지정
+    %d{yyyy-MM-dd HH:mm:ss} 숫자형태로 2026-07-05 11:52:32 초 와 같이표기
+    [%thread]               이 로그를 실행한 스레드 이름
+    %-5level                로그 레벨을 왼쪽 정렬로 5칸 확보해서 표시
+                            info 다 error 다 같은 표기 지정
+    %logger{36}             로그를 찍은 클래스 경로 이름 최대 36자 까지만 표시
+    %msg                    실제 로그 내용 메세지 표기
+    %n                      줄바꿈
+  file:
+    name: logs/app.log      logs 라는 폴더 안에 app.log 라는 파일 명칭으로 저장
+                            콘솔창에 나오는 실시간 흐름을 파일로 저장
