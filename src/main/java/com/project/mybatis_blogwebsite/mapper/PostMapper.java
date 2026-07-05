@@ -2,7 +2,6 @@ package com.project.mybatis_blogwebsite.mapper;
 
 import com.project.mybatis_blogwebsite.dto.Post;
 import org.apache.ibatis.annotations.Mapper;
-
 import java.util.List;
 /*
 myBatis 에서 mapper 폴더는

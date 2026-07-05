@@ -24,7 +24,7 @@ public class PostService {
      */
 
 
-    public List<Post> 모든게시물_SQL에서_가져오는기능() {
+    public List<Post> 모두조회() {
         return postMapper.모두조회();
     }
 

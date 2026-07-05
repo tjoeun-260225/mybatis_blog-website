@@ -19,6 +19,6 @@ public class ApiController {
 
     @GetMapping
     public List<Post> apiGetAllPosts(){
-        return postService.모든게시물_SQL에서_가져오는기능();
+        return postService.모두조회();
     }
 }

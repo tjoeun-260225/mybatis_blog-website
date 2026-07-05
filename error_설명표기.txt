@@ -1,0 +1,38 @@
+error_설명표기.txt
+
+.sql
+에 작성하는 sql문은 반드시 맨 뒤에 ;으로 sql 이 끝나는 마침표 와 같은
+기호를 작성해야 한다.
+
+.xml 에 작성한 sql 문은 ;을 작성하면 안된다.
+mybatis 는 sql 내부에서 sql 작성을 끝낼 때 <> 태그로 이미 사용하겠다
+표기하였기 때문에 따로 ;을 붙이지 않는다.
+
+
+    <select id="모두조회">
+        SELECT id, title, content FROM posts
+    </select>
+
+    정상적으로 작동
+
+    <select id="모두조회">
+        SELECT id, title, content FROM posts;
+    </select>
+    이미 <> 형태로 어디서 sql 이 시작하고 어디서 sql 문이 종료된다
+    표기하였기 때문에 ; 을 붙이지 않는다.
+
+    error에서 # 이 보이면 반드시 SQL문을 작성했던
+    .sql 이나 .xml 에서 테이블이름이나 컬럼이름이 잘못되었거나
+    sql 구문 작성 표기법에 문제가 발생한 것
+
+
+
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\schema.sql]: (
+
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException:
+Syntax error in SQL statement
+"([*]"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+
+
+statement #2
+#1

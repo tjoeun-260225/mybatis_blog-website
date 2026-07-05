@@ -49,6 +49,6 @@ MyBatis가 namespace 로 XML 찾아감
 -->
 <mapper namespace="com.project.mybatis_blogwebsite.mapper.PostMapper">
     <select id="모두조회">
-        SELECT id, title, content FROM posts
+        SELECT * FROM posts
     </select>
 </mapper>

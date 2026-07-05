@@ -21,7 +21,7 @@ public class HtmlController {
     public String 메인페이지(Model model){
         model.addAttribute(
                 "posts",
-                postService.모든게시물_SQL에서_가져오는기능()
+                postService.모두조회()
         );
         return "index";
     }
