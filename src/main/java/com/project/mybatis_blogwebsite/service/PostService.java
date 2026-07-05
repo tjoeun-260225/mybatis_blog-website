@@ -1,0 +1,31 @@
+package com.project.mybatis_blogwebsite.service;
+
+import com.project.mybatis_blogwebsite.dto.Post;
+import com.project.mybatis_blogwebsite.mapper.PostMapper;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+// service.PostService
+@Service
+@RequiredArgsConstructor
+public class PostService {
+    // postMapper 라는 공간을 생성한 상태일 뿐
+    // 사용한 상태가 아니기 때문에 글씨가 죽어있는 표현이 맞음
+    private final PostMapper postMapper;
+    /*
+    @RequiredArgsConstructor 를 작성하지 않으면
+
+    를 작성해야 한다.
+    이 클래스가 갖고있는 필드와 생성자가 파라미터로 받은 값을 지정
+
+    파라미터로 들어온 값을 클래스 필드에서 사용할 수 있도록 설정
+     */
+
+
+    public List<Post> 모든게시물_SQL에서_가져오는기능() {
+        return postMapper.모두조회();
+    }
+
+}
