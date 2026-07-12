@@ -40,10 +40,36 @@ public class PostService {
     }
 
     public void 수정하기(Long id, Post post) {
-        post.setId(id);
+//        post.setId(id);
         postMapper.수정하기(post);
     }
+/*
+일반적인 수정 API 패턴
+PUT /posts/{id}
+Body : {"title":"수정된 제목", "content" : "수정된 내용"}
 
+id는 body 에 없다.
+
+이 경우 URL 의 id와 body  로 받은 post 객체 별개
+외부에서 데이터를 조작하여 자바로 넘겨줄 경우
+외부에서 조작한 id에 수정된 데이터가 들어갈 수 있다.
+데이터가 다수 데이터가 존재할 경우에는 로직 실수를 할 경우
+잘못된 데이터가 들어갈 수 있다.
+
+현재는 잘 되지만
+명시적으로 프론트엔드에서 전달받은 데이터를 자바에서 한 번더 확인하는 로직을
+작성하고 외부 문제와 별개로 정상적으로 수정한 번호의 데이터가 수정될 수 있도록
+자바에서 한 번 더 보안 처리
+
+public void 수정하기(Long id, Post post) {
+    postMapper.수정하기(post);
+}
+
+public void 수정하기(Long id, Post post) {
+    post.setId(id);
+    postMapper.수정하기(post);
+}
+ */
     public void 삭제하기(Long id) {
         postMapper.삭제하기(id);
     }

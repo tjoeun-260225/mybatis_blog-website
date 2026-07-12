@@ -62,9 +62,6 @@ button 태그
             </a>
         </td>
         <td>
-            <!-- 중간에 #{p.id} 를 추가하여
-            수정하기 버튼을 클릭하면
-            수정하기 폼이 보이도록 코드 수정-->
             <a th:href="@{'/posts/'+${p.id}+'/delete'}">
                 <button type="button">삭제하기</button>
             </a>

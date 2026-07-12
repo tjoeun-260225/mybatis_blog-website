@@ -3021,3 +3021,731 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2026-07-12T14:18:03.486+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
 2026-07-12T14:18:03.489+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.376 seconds (process running for 70.096)
 2026-07-12T14:18:03.490+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T14:39:19.284+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2026-07-12T14:39:19.285+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T14:39:19.288+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T14:39:19.369+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T14:39:19.369+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T14:39:19.370+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T14:39:19.519+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T14:39:19.520+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T14:39:19.575+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T14:39:19.575+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T14:39:19.575+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T14:39:19.575+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T14:39:19.626+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T14:39:19.627+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T14:39:19.627+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T14:39:19.644+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T14:39:19.644+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 272 ms
+2026-07-12T14:39:19.687+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T14:39:19.692+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T14:39:19.714+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T14:39:19.759+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T14:39:19.781+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T14:39:19.793+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T14:39:19.796+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.46 seconds (process running for 1346.403)
+2026-07-12T14:39:19.797+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T14:40:33.061+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2026-07-12T14:40:33.062+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T14:40:33.065+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T14:40:33.179+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T14:40:33.180+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T14:40:33.180+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T14:40:33.298+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T14:40:33.299+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T14:40:33.325+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T14:40:33.325+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T14:40:33.326+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T14:40:33.326+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T14:40:33.356+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T14:40:33.357+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T14:40:33.357+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T14:40:33.370+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T14:40:33.370+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 188 ms
+2026-07-12T14:40:33.396+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T14:40:33.399+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T14:40:33.416+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T14:40:33.448+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T14:40:33.462+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T14:40:33.472+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T14:40:33.476+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.321 seconds (process running for 1420.083)
+2026-07-12T14:40:33.476+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T14:46:39.948+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T14:46:39.949+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T14:46:39.949+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-12T14:46:39.951+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T14:46:39.952+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36ea498a] was not registered for synchronization because synchronization is not active
+2026-07-12T14:46:39.952+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T14:46:39.952+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-07-12T14:46:39.953+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection org.sqlite.jdbc4.JDBC4Connection@fd45e07
+2026-07-12T14:46:39.953+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-07-12T14:46:39.953+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1532956487 wrapping org.sqlite.jdbc4.JDBC4Connection@fd45e07] will not be managed by Spring
+2026-07-12T14:46:39.953+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T14:46:39.954+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 1(Long)
+2026-07-12T14:46:39.954+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 1
+2026-07-12T14:46:39.954+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36ea498a]
+2026-07-12T14:46:52.056+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T14:46:52.057+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1928d996] was not registered for synchronization because synchronization is not active
+2026-07-12T14:46:52.057+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T14:46:52.057+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@401548483 wrapping org.sqlite.jdbc4.JDBC4Connection@fd45e07] will not be managed by Spring
+2026-07-12T14:46:52.057+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T14:46:52.057+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 2(Long)
+2026-07-12T14:46:52.058+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 1
+2026-07-12T14:46:52.058+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1928d996]
+2026-07-12T14:47:00.536+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T14:47:00.536+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36c42630] was not registered for synchronization because synchronization is not active
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@939777688 wrapping org.sqlite.jdbc4.JDBC4Connection@fd45e07] will not be managed by Spring
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 3(Long)
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 0
+2026-07-12T14:47:00.537+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36c42630]
+2026-07-12T14:47:00.541+09:00 ERROR 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "edit": An error happened during template parsing (template: "class path resource [templates/edit.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/edit.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:374) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:193) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.55.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.55.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "post.id" (template: "edit" - line 9, col 7)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "post.id" (template: "edit" - line 9, col 7)
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:302) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:96) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:89) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:233) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:388) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:275) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	... 79 common frames omitted
+
+2026-07-12T14:47:00.550+09:00 ERROR 29756 --- [mybatis_blog-website] [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/edit.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:233) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorValueRef.getValue(PropertyOrFieldReference.java:388) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:97) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:116) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:338) ~[spring-expression-6.2.19.jar:6.2.19]
+	at org.thymeleaf.spring6.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:275) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:96) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.AdditionExpression.executeAddition(AdditionExpression.java:89) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.ComplexExpression.executeComplex(ComplexExpression.java:62) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:112) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:264) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:144) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:374) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:193) ~[thymeleaf-spring6-3.1.5.RELEASE.jar:3.1.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1438) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1168) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.55.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.55.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.19.jar:6.2.19]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1797) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.55.jar:10.1.55]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
+2026-07-12T15:01:46.377+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-12T15:01:46.378+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:01:46.381+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:01:46.382+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-07-12T15:01:46.383+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-07-12T15:01:46.467+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:01:46.468+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:01:46.468+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:01:46.580+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:01:46.581+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:01:46.611+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:01:46.611+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:01:46.611+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:01:46.611+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:01:46.647+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:01:46.649+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:01:46.649+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:01:46.661+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:01:46.661+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 191 ms
+2026-07-12T15:01:46.690+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:01:46.694+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:01:46.711+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:01:46.754+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:01:46.773+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:01:46.781+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:01:46.784+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.339 seconds (process running for 2693.392)
+2026-07-12T15:01:46.785+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:05:24.217+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-12T15:05:24.218+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:05:24.221+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:05:24.318+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:05:24.318+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:05:24.318+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:05:24.439+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:05:24.439+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:05:24.476+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:05:24.477+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:05:24.477+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:05:24.477+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:05:24.512+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:05:24.512+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:05:24.513+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:05:24.529+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:05:24.529+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 210 ms
+2026-07-12T15:05:24.606+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:05:24.612+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:05:24.631+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:05:24.672+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:05:24.690+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:05:24.701+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:05:24.704+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.408 seconds (process running for 2911.311)
+2026-07-12T15:05:24.706+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:05:26.116+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-12T15:05:26.117+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-23] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:05:26.120+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:05:26.224+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:05:26.224+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:05:26.224+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:05:26.374+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:05:26.374+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:05:26.408+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:05:26.408+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:05:26.408+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:05:26.409+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:05:26.444+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:05:26.445+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:05:26.445+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:05:26.458+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:05:26.458+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 232 ms
+2026-07-12T15:05:26.493+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:05:26.498+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:05:26.522+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:05:26.564+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:05:26.578+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:05:26.589+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:05:26.593+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.394 seconds (process running for 2913.2)
+2026-07-12T15:05:26.594+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:06:25.231+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:06:25.231+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:06:25.233+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-12T15:06:25.233+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:06:25.233+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1195e9a5] was not registered for synchronization because synchronization is not active
+2026-07-12T15:06:25.233+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:06:25.233+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-07-12T15:06:25.235+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection org.sqlite.jdbc4.JDBC4Connection@2d663b23
+2026-07-12T15:06:25.235+09:00  INFO 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-07-12T15:06:25.235+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@418368355 wrapping org.sqlite.jdbc4.JDBC4Connection@2d663b23] will not be managed by Spring
+2026-07-12T15:06:25.235+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : ==>  Preparing: SELECT * FROM posts
+2026-07-12T15:06:25.235+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : ==> Parameters: 
+2026-07-12T15:06:25.236+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : <==      Total: 2
+2026-07-12T15:06:25.236+09:00 DEBUG 29756 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1195e9a5]
+2026-07-12T15:07:01.336+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-07-12T15:07:01.336+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-27] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:07:01.340+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:07:01.341+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-07-12T15:07:01.342+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-07-12T15:07:01.442+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:07:01.442+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:07:01.442+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:07:01.570+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:07:01.571+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:07:01.604+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:07:01.604+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:07:01.604+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:07:01.604+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:07:01.632+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:07:01.632+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:07:01.633+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:07:01.649+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:07:01.649+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2026-07-12T15:07:01.679+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:07:01.685+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:07:01.704+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:07:01.754+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:07:01.779+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:07:01.795+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:07:01.799+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.378 seconds (process running for 3008.406)
+2026-07-12T15:07:01.800+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:09:02.451+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2026-07-12T15:09:02.453+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:09:02.456+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:09:02.563+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:09:02.564+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:09:02.564+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:09:02.692+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:09:02.692+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:09:02.720+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:09:02.720+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:09:02.721+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:09:02.721+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:09:02.749+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:09:02.750+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:09:02.751+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:09:02.765+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:09:02.765+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 200 ms
+2026-07-12T15:09:02.794+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:09:02.797+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:09:02.814+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:09:02.848+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:09:02.862+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:09:02.873+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:09:02.876+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.336 seconds (process running for 3129.483)
+2026-07-12T15:09:02.876+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:09:04.293+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2026-07-12T15:09:04.295+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-35] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:09:04.297+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:09:04.397+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:09:04.397+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:09:04.397+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:09:04.532+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:09:04.532+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:09:04.572+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:09:04.572+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:09:04.572+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:09:04.572+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:09:04.609+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:09:04.610+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:09:04.610+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:09:04.626+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:09:04.626+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 227 ms
+2026-07-12T15:09:04.655+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:09:04.660+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:09:04.682+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:09:04.733+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:09:04.769+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:09:04.787+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:09:04.793+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.421 seconds (process running for 3131.4)
+2026-07-12T15:09:04.795+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:16:20.086+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-07-12T15:16:20.087+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-39] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:16:20.090+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:16:20.183+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:16:20.183+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:16:20.183+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:16:20.301+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:16:20.302+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:16:20.333+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:16:20.333+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:16:20.333+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:16:20.334+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:16:20.372+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:16:20.373+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:16:20.373+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:16:20.387+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:16:20.387+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 201 ms
+2026-07-12T15:16:20.420+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:16:20.423+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:16:20.442+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:16:20.486+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:16:20.513+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:16:20.523+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:16:20.527+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.368 seconds (process running for 3567.134)
+2026-07-12T15:16:20.528+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:21:33.296+09:00  INFO 29756 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-07-12T15:21:33.297+09:00  INFO 29756 --- [mybatis_blog-website] [Thread-43] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:21:33.301+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:21:33.388+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 29756 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:21:33.388+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:21:33.388+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:21:33.507+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:21:33.507+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:21:33.549+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:21:33.549+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:21:33.549+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:21:33.549+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:21:33.591+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:21:33.593+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:21:33.593+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:21:33.607+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:21:33.607+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 217 ms
+2026-07-12T15:21:33.635+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:21:33.638+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:21:33.655+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:21:33.695+09:00 DEBUG 29756 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:21:33.714+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:21:33.723+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:21:33.726+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.36 seconds (process running for 3880.333)
+2026-07-12T15:21:33.726+09:00  INFO 29756 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:24:04.230+09:00  INFO 29756 --- [mybatis_blog-website] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:24:04.236+09:00  INFO 29756 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:24:09.561+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 13592 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:24:09.562+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:24:09.563+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:24:09.599+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-12T15:24:09.599+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-12T15:24:10.143+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:24:10.143+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:24:10.310+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:24:10.310+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:24:10.311+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:24:10.313+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:24:10.616+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:24:10.631+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:24:10.631+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:24:10.670+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:24:10.671+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1071 ms
+2026-07-12T15:24:10.916+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:24:10.927+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:24:10.984+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:24:11.200+09:00 DEBUG 13592 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:24:11.270+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:24:11.299+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:24:11.306+09:00  INFO 13592 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 2.144 seconds (process running for 2.707)
+2026-07-12T15:24:12.730+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:24:12.731+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:24:12.732+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-12T15:24:12.760+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:12.762+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28583c4c] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:12.767+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:12.768+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-12T15:24:12.873+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@1ae8a01c
+2026-07-12T15:24:12.875+09:00  INFO 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-12T15:24:12.878+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1244561884 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:12.883+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : ==>  Preparing: SELECT * FROM posts
+2026-07-12T15:24:12.899+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : ==> Parameters: 
+2026-07-12T15:24:12.917+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.모두조회             : <==      Total: 2
+2026-07-12T15:24:12.920+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@28583c4c]
+2026-07-12T15:24:15.268+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:15.268+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23ad8bfc] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:15.271+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:15.271+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@627860344 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:15.272+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T15:24:15.274+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 1(Long)
+2026-07-12T15:24:15.275+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 1
+2026-07-12T15:24:15.275+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@23ad8bfc]
+2026-07-12T15:24:16.976+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:16.976+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b52ca18] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:16.977+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:16.977+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1451991844 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:16.977+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.수정하기             : ==>  Preparing: UPDATE posts SET title = ?, content = ? WHERE id = ?
+2026-07-12T15:24:16.978+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.수정하기             : ==> Parameters: 첫 번째 글(String), 안녕하세요dd(String), 1(Long)
+2026-07-12T15:24:16.984+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] c.p.m.mapper.PostMapper.수정하기             : <==    Updates: 1
+2026-07-12T15:24:16.984+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-3] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5b52ca18]
+2026-07-12T15:24:16.989+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:16.989+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@473a0131] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:16.989+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:16.989+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1241380774 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:16.990+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] c.p.m.mapper.PostMapper.모두조회             : ==>  Preparing: SELECT * FROM posts
+2026-07-12T15:24:16.990+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] c.p.m.mapper.PostMapper.모두조회             : ==> Parameters: 
+2026-07-12T15:24:16.990+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] c.p.m.mapper.PostMapper.모두조회             : <==      Total: 2
+2026-07-12T15:24:16.990+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-6] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@473a0131]
+2026-07-12T15:24:20.516+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:20.517+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@385bf7da] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:20.517+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:20.517+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@916201121 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:20.517+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T15:24:20.518+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 1(Long)
+2026-07-12T15:24:20.519+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 1
+2026-07-12T15:24:20.519+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-7] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@385bf7da]
+2026-07-12T15:24:21.315+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:24:21.315+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b8a8448] was not registered for synchronization because synchronization is not active
+2026-07-12T15:24:21.315+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:24:21.315+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1699571529 wrapping org.sqlite.jdbc4.JDBC4Connection@1ae8a01c] will not be managed by Spring
+2026-07-12T15:24:21.315+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] c.p.m.mapper.PostMapper.아이디조회            : ==>  Preparing: SELECT * FROM posts WHERE id = ?
+2026-07-12T15:24:21.316+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] c.p.m.mapper.PostMapper.아이디조회            : ==> Parameters: 1(Long)
+2026-07-12T15:24:21.316+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] c.p.m.mapper.PostMapper.아이디조회            : <==      Total: 1
+2026-07-12T15:24:21.316+09:00 DEBUG 13592 --- [mybatis_blog-website] [http-nio-8080-exec-4] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b8a8448]
+2026-07-12T15:24:30.059+09:00  INFO 13592 --- [mybatis_blog-website] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:24:30.063+09:00  INFO 13592 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:24:30.070+09:00  INFO 13592 --- [mybatis_blog-website] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-12T15:24:30.072+09:00  INFO 13592 --- [mybatis_blog-website] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-12T15:50:58.423+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 21440 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:50:58.424+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:50:58.425+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:50:58.463+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-07-12T15:50:58.463+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-07-12T15:50:59.013+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:50:59.014+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:50:59.127+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:50:59.127+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:50:59.128+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:50:59.129+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:50:59.402+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:50:59.418+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:50:59.419+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:50:59.465+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:50:59.466+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1002 ms
+2026-07-12T15:50:59.702+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:50:59.709+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:50:59.771+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:50:59.979+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:51:00.070+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:51:00.108+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:51:00.115+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 2.159 seconds (process running for 2.746)
+2026-07-12T15:51:21.598+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:51:21.598+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:51:21.599+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-12T15:51:30.925+09:00  INFO 21440 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2026-07-12T15:51:30.927+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:51:30.931+09:00  INFO 21440 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:51:30.996+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 21440 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:51:30.996+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:51:30.996+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:51:31.118+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:51:31.118+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:51:31.150+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:51:31.150+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:51:31.151+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:51:31.151+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:51:31.187+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:51:31.188+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:51:31.188+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:51:31.205+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:51:31.205+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 207 ms
+2026-07-12T15:51:31.246+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:51:31.251+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:51:31.270+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:51:31.313+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:51:31.330+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:51:31.339+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:51:31.342+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.368 seconds (process running for 33.972)
+2026-07-12T15:51:31.343+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:51:40.050+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:51:40.050+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:51:40.051+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-12T15:51:40.838+09:00  INFO 21440 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2026-07-12T15:51:40.838+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:51:40.841+09:00  INFO 21440 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:51:40.905+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 21440 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:51:40.905+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:51:40.905+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:51:41.019+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:51:41.019+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:51:41.052+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:51:41.052+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:51:41.052+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:51:41.052+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:51:41.080+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:51:41.081+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:51:41.081+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:51:41.096+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:51:41.096+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 191 ms
+2026-07-12T15:51:41.125+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:51:41.131+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:51:41.146+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:51:41.183+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:51:41.197+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:51:41.206+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:51:41.209+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.326 seconds (process running for 43.84)
+2026-07-12T15:51:41.210+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:52:32.954+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:52:32.954+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:52:32.954+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-07-12T15:52:34.182+09:00  INFO 21440 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2026-07-12T15:52:34.183+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:52:34.186+09:00  INFO 21440 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:52:34.256+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 21440 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:52:34.256+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:52:34.256+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:52:34.390+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:52:34.390+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:52:34.419+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:52:34.419+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:52:34.419+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:52:34.420+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:52:34.446+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:52:34.447+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:52:34.447+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:52:34.463+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:52:34.463+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 205 ms
+2026-07-12T15:52:34.488+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:52:34.492+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:52:34.507+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:52:34.540+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:52:34.553+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:52:34.563+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:52:34.566+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.332 seconds (process running for 97.196)
+2026-07-12T15:52:34.566+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:53:09.162+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-12T15:53:09.162+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-12T15:53:09.163+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-07-12T15:53:09.176+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:53:09.179+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c691440] was not registered for synchronization because synchronization is not active
+2026-07-12T15:53:09.183+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:53:09.184+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-12T15:53:09.286+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.sqlite.jdbc4.JDBC4Connection@10350934
+2026-07-12T15:53:09.287+09:00  INFO 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-12T15:53:09.291+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@508837023 wrapping org.sqlite.jdbc4.JDBC4Connection@10350934] will not be managed by Spring
+2026-07-12T15:53:09.296+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.삭제하기             : ==>  Preparing: DELETE FROM posts WHERE id = ?
+2026-07-12T15:53:09.310+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.삭제하기             : ==> Parameters: 1(Long)
+2026-07-12T15:53:09.317+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] c.p.m.mapper.PostMapper.삭제하기             : <==    Updates: 1
+2026-07-12T15:53:09.317+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-1] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5c691440]
+2026-07-12T15:53:09.325+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
+2026-07-12T15:53:09.325+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f534275] was not registered for synchronization because synchronization is not active
+2026-07-12T15:53:09.326+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T15:53:09.326+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1935150274 wrapping org.sqlite.jdbc4.JDBC4Connection@10350934] will not be managed by Spring
+2026-07-12T15:53:09.326+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.모두조회             : ==>  Preparing: SELECT * FROM posts
+2026-07-12T15:53:09.326+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.모두조회             : ==> Parameters: 
+2026-07-12T15:53:09.344+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] c.p.m.mapper.PostMapper.모두조회             : <==      Total: 1
+2026-07-12T15:53:09.347+09:00 DEBUG 21440 --- [mybatis_blog-website] [http-nio-8080-exec-2] org.mybatis.spring.SqlSessionUtils       : Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f534275]
+2026-07-12T15:54:31.386+09:00  INFO 21440 --- [mybatis_blog-website] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 8 class path changes (0 additions, 0 deletions, 8 modifications)
+2026-07-12T15:54:31.388+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:54:31.392+09:00  INFO 21440 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-07-12T15:54:31.393+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-07-12T15:54:31.396+09:00  INFO 21440 --- [mybatis_blog-website] [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-07-12T15:54:31.468+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 21440 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T15:54:31.468+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T15:54:31.469+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T15:54:31.582+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T15:54:31.582+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T15:54:31.608+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T15:54:31.608+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T15:54:31.608+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T15:54:31.608+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T15:54:31.637+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T15:54:31.638+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T15:54:31.638+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T15:54:31.651+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-07-12T15:54:31.651+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 181 ms
+2026-07-12T15:54:31.678+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T15:54:31.682+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T15:54:31.696+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T15:54:31.731+09:00 DEBUG 21440 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2026-07-12T15:54:31.745+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-07-12T15:54:31.760+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-07-12T15:54:31.763+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Started MybatisBlogWebsiteApplication in 0.316 seconds (process running for 214.394)
+2026-07-12T15:54:31.765+09:00  INFO 21440 --- [mybatis_blog-website] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-07-12T15:55:25.076+09:00  INFO 21440 --- [mybatis_blog-website] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-07-12T15:55:25.079+09:00  INFO 21440 --- [mybatis_blog-website] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete

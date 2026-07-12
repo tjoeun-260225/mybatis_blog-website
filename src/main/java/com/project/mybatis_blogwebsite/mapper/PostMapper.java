@@ -36,7 +36,6 @@ public interface PostMapper {
     서로 연결할 수 있다.
      */
     List<Post> 모두조회();
-
     /*
     글쓰기 등록 기능
     파라미터로 받은 post 객체의 title, content 값을 posts 테이블 저장
@@ -57,9 +56,6 @@ public interface PostMapper {
     // 다수 수정 삭제가 필요할 경우 int 로 사용하여
     // 몇 개 수정되었고, 몇 개 삭제되었는지 반환받기도 한다.
     void 수정하기(Post post);
-
     void 삭제하기(Long id); // 삭제의 경우 기본키가 설정된 컬럼 명칭으로 삭제
-
     Post 아이디조회(Long id);
-
 }
