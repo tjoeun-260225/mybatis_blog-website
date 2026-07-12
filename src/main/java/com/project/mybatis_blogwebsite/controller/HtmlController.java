@@ -4,6 +4,7 @@ import com.project.mybatis_blogwebsite.dto.Post;
 import com.project.mybatis_blogwebsite.service.PostService;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.java.Log;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -66,8 +67,28 @@ public class HtmlController {
     // 기능으로 가져오기
     @GetMapping("posts/{id}/edit")
     public String 수정폼(@PathVariable Long id, Model model){
-        model.addAttribute("posts", postService.아이디조회(id));
+        model.addAttribute("post", postService.아이디조회(id));
         return "edit";
     }
     // edit.html 아이디조회 생성 글수정기능 삭제기능 완성
+
+    // 수정 폼에서 제출된 데이터로 실제 수정 처리
+    @PostMapping("/posts/{id}/edit")
+    public String 글수정기능(@PathVariable Long id, Post post) {
+        // AI 를 이용한 코딩으로 작업할 경우
+        // AI MVC 패턴 규칙에 맞지 않게 코딩을 줄 가능성이 높다.
+        // post.setId(id) html에서 받은 id 를 사용하는 로직을 추가
+        // 위와 같은 작업은 모두다 service 에서 진행한다.
+        // controller 에서는 setter getter 의 기능을 사용할 일이 거의 없다.
+        postService.수정하기(id,post);
+        return "redirect:/";
+
+    }
+
+//    @PostMapping("/posts/{id}/delete")
+    @GetMapping("/posts/{id}/delete")
+    public String 글삭제기능(@PathVariable Long id) {
+        postService.삭제하기(id);
+        return "redirect:/";
+    }
 }

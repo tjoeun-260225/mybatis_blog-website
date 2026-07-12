@@ -44,6 +44,14 @@ a-z 다 만든다음에 잘 되는지 확인xxxx
 @RequiredArgsConstructor
 public class ApiController {
     private final PostService postService;
+
+//    @PostMapping("/new")                                 // /api/posts + /new = /api/posts/new
+//    public Post 글저장기능(Post post) {
+//        postService.글쓰기(post);
+//        return post;
+//    }
+
+
     @GetMapping
     public List<Post> apiGetAllPosts(){
 
@@ -59,11 +67,7 @@ public class ApiController {
      */
     /*
     백엔드 전용 개발자가 작업하는 방법 */
-    @PostMapping("/new")                                 // /api/posts + /new = /api/posts/new
-    public Post 글저장기능(Post post) {
-        postService.글쓰기(post);
-        return post;
-    }
+
 
 
 }

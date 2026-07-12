@@ -93,5 +93,11 @@ MyBatis가 namespace 로 XML 찾아감
         FROM posts
         WHERE id = #{id}
     </delete>
+
+    <select id="아이디조회">
+        SELECT *
+        FROM posts
+        WHERE id = #{id}
+    </select>
 </mapper>
 

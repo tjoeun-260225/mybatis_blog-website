@@ -35,8 +35,12 @@ public class PostService {
         // 코드가 간결한 것이다.
         postMapper.글쓰기(post);
     }
+    public Post 아이디조회(Long id){
+        return postMapper.아이디조회(id);
+    }
 
-    public void 수정하기(Post post) {
+    public void 수정하기(Long id, Post post) {
+        post.setId(id);
         postMapper.수정하기(post);
     }
 

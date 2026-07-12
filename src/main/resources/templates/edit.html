@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>글 수정</title>
+</head>
+<body>
+<h1>글 수정하기</h1>
+<form th:action="@{'/posts/' + ${post.id} + '/edit'}"
+      method="post">
+    <div>
+        <label for="title">제목</label>
+        <!--
+         <input type="text" id="title" name="title" " required>
+         -- DB에서 데이터를 가져올 필요가 없는 input
+
+         <input type="text" id="title" name="title" th:value="${post.title}" required>
+         -- DB에서 데이터를 가져오고, 고객이 수정한 데이터를 다시 DB로 저장해야하는 상황
+         th:value = java 에서 model.addAttribute 형태로 DB에 내장딘 데이터를
+         특정 변수이름으로 전달받고,
+         전달받은 데이터를 value = input 에 넣어줄 값으로 세팅
+         th:value="${model에서 선언한 변수이름.특정속성}"
+        -->
+        <input type="text"
+               id="title"
+               name="title"
+               th:value="${post.title}"
+               required
+        >
+        <br>
+        <label>
+            내용 :
+            <br>
+            <textarea id="content"
+                      name="content"
+                      rows="8"
+                      cols="50"
+                      required
+                      th:text="${post.content}"></textarea>
+        </label>
+    </div>
+    <br>
+    <button>수정완료</button>
+</form>
+</body>
+</html>
