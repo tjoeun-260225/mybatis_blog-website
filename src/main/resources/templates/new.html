@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>새 글쓰기</title>
+</head>
+<body>
+<!--
+form 태그 = 폼 내부에 작성한 데이터를 어딘가에 제출할 때 사용
+action = "소비자가 작성한 데이터를 제출하는 장소(=경로)"
+method =
+        get  = 데이터가 주소창에  그대로 노출됨
+               비밀번호, 글 내용처럼 중요한 데이터를 작성할 때는
+               사용 금지
+               북마크 / 검색 / 필터링처럼 조회할 때 주로 사용
+        post = 폼에서 소비자가 작성한 데이터를
+               www. url 주소에 노출하지 않는 방법
+               글쓰기, 회원가입, 로그인처럼 서버에 새롭고 중요한
+               데이터를 생성 / 변경할 때 사용
+
+enctype="multipart/form-data"
+
+<form action="/api/posts/new" method="post">
+과 같이 enctype 에서 multipart 가 지정되어 있지 않으면
+enctype="application/x-www-form-urlencoded" 이 타입이 기본적으로 설정되어 있다.
+텍스트 데이터만 보낼 수 있는 타입 세팅
+텍스트만 제출 가능
+
+<form action="/api/posts/new" method="post" enctype="multipart/form-data">
+과 같이 multipart 가 지정되어 있으면
+텍스트 or 파일 or 이미지 or 비디오 등 파일 제출 가능
+-->
+<form action="/api/posts/new" method="post">
+    <div>
+        <!--
+        라벨은 없어도 되지만,
+        소비자가 input 창을 클릭하지 않고 제목을 클릭해도
+        제목 옆에 있는 네모 칸에 제목을 작성할 수 있도록 해줄 수 있다.
+        for="아이디명칭"
+        id="아이디명칭"
+        일치하는 것 대로 동작
+        제목을 클릭하면 제목 옆에 있는 네모 칸에 제목을 작성할 수 있다.
+        required = form 데이터를 제출하기 위하여 필수로 작성해야하는 input 항목 설정
+        -->
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <br>
+    <!--
+    label 태그 내부에 작성하면 for 를 생략해도 된다.
+
+    id 는 javascript 에서 기능을 연결할 때 사용하는 명칭
+    name 은 form 태그에서 데이터를 controller 로 전달할 때
+    어떤 데이터인지 표기하는 키 명칭으로 사용
+
+    name = "content"
+    오늘 날씨 좋네요 ~^^ 소비자가 글 작성
+    controller = /api/posts/new 로 데이터를 들고 갈 때
+    content:"오늘 날씨 좋네요 ~^^"
+    와 같은 형태로 자바에 데이터 전달
+    -->
+    <label>내용 :
+        <br>
+        <textarea id="content"
+                  name="content"
+                  rows="8"
+                  cols="50"
+                  required
+        >
+
+        </textarea>
+    </label>
+    <!--
+    이 데이터는 label 에 작성되어 있는 명칭을 클릭하더라도
+    어떤 input 도 지정되어 텍스트 작성 커서가 나오지 않을 것이고,
+    controller 에 name이 없기 때문에 데이터를 전달할 일도 없을 것이다.
+    -->
+    <label>for 속성과 controller 로 데이터 전달 테스트 용 라벨</label>
+    <br>
+    <input type="text">
+    <br>
+    <!--
+    아래 button 에는 type="submit" 이 기본값으로 내장되어 있다.
+    -->
+    <button>저장하기</button>
+</form>
+
+</body>
+</html>

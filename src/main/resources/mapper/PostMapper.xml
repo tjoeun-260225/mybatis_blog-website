@@ -51,4 +51,34 @@ MyBatis가 namespace 로 XML 찾아감
     <select id="모두조회">
         SELECT * FROM posts
     </select>
+    <!--
+    useGeneratedKeys
+    - DB가 자동으로 만들어준 키(id) 값을 MyBatis한테 전달하겠다.
+    keyProperty
+    - DB에서 자동으로 만들어준 순번 키 값을 어디에 넣어줄지 정하는 속성
+    게시물을 추가할 때
+    CREATE TABLE IF NOT EXISTS posts(
+    id      INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    id 는 알아서 들어간 데이터 순번에 맞추어 번호를 자동으로 증가시키겠다 설정
+    myBatis는 데이터 하나가 들어갈 예정이다 알림
+    db는 알아서 번호 순번을 준비 준비된 순번을 mybatis로 전달하고,
+    mybatis는 그 번호를 보유한 채 html → controller → service 순서로
+    전달받은 데이터를 SQL 저장
+
+    자동으로
+    INSERT INTO posts (title, content)
+        VALUES  (#{title}, #{content})
+
+        자바에서 설정한 변수이름은 #{자바에서_설정한_변수이름}
+        과 같이 표기하여 사용
+        자바에서 keyword="소비자가_작성한_검색어"를 전달받으면
+        검색 기능과 관련된 sql where 에서는 keyword 라는 명칭으로
+        검색을 시작한다.
+    -->
+    <insert id="글쓰기" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO posts (title, content)
+        VALUES  (#{title}, #{content})
+    </insert>
 </mapper>
+

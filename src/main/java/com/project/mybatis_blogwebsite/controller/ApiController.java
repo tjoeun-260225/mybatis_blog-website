@@ -4,6 +4,7 @@ import com.project.mybatis_blogwebsite.dto.Post;
 import com.project.mybatis_blogwebsite.service.PostService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -49,4 +50,23 @@ public class ApiController {
     public List<Post> apiGetAllPosts(){
         return postService.모두조회();
     }
+
+    /*
+    <form action="/api/posts/new" method="post">
+    @RequestMapping("/api/posts")
+    form 에서 데이터 저장하겠다 지정한 주소를 확인하고,
+    어노테이션으로  @RequestMapping 이 존재한다면
+    내부 컨트롤러는 모두다 기본적으로 맨 앞에
+    @RequestMapping 으로 지정한 경로가 설정
+     */
+    /*
+    백엔드 전용 개발자가 작업하는 방법
+    @PostMapping("/new") // /api/posts + /new = /api/posts/new
+    public Post 글저장기능(Post post) {
+        postService.글쓰기(post);
+        return post;
+    }
+
+     */
+
 }
