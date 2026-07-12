@@ -80,5 +80,18 @@ MyBatis가 namespace 로 XML 찾아감
         INSERT INTO posts (title, content)
         VALUES  (#{title}, #{content})
     </insert>
+
+    <update id="수정하기">
+        UPDATE  posts
+        SET title = #{title},
+            content = #{content}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="삭제하기">
+        DELETE
+        FROM posts
+        WHERE id = #{id}
+    </delete>
 </mapper>
 

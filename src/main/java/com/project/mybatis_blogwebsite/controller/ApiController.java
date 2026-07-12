@@ -43,14 +43,12 @@ a-z 다 만든다음에 잘 되는지 확인xxxx
 @RequestMapping("/api/posts")
 @RequiredArgsConstructor
 public class ApiController {
-
     private final PostService postService;
-
     @GetMapping
     public List<Post> apiGetAllPosts(){
+
         return postService.모두조회();
     }
-
     /*
     <form action="/api/posts/new" method="post">
     @RequestMapping("/api/posts")
@@ -60,13 +58,12 @@ public class ApiController {
     @RequestMapping 으로 지정한 경로가 설정
      */
     /*
-    백엔드 전용 개발자가 작업하는 방법
-    @PostMapping("/new") // /api/posts + /new = /api/posts/new
+    백엔드 전용 개발자가 작업하는 방법 */
+    @PostMapping("/new")                                 // /api/posts + /new = /api/posts/new
     public Post 글저장기능(Post post) {
         postService.글쓰기(post);
         return post;
     }
 
-     */
 
 }

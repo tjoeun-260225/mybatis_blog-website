@@ -28,12 +28,20 @@ public class PostService {
         return postMapper.모두조회();
     }
 
-    public  void 글쓰기(Post post) {
+    public void 글쓰기(Post post) {
         // 비공개 설정과 같은 글쓰기 작업을 할 경우
         // 서비스 내부 로직에 코드를 상세히 기입한다.
         // 현재는 단순 글쓰기 저장 정도만 확인하기 때문에
         // 코드가 간결한 것이다.
         postMapper.글쓰기(post);
+    }
+
+    public void 수정하기(Post post) {
+        postMapper.수정하기(post);
+    }
+
+    public void 삭제하기(Long id) {
+        postMapper.삭제하기(id);
     }
 
 }

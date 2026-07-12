@@ -43,6 +43,7 @@ button 태그
         <th>번호</th>
         <th>제목</th>
         <th>내용</th>
+        <th>삭제</th>
     </tr>
     </thead>
     <tbody>
@@ -50,8 +51,19 @@ button 태그
         <td th:text="${p.id}"></td>
         <td th:text="${p.title}"></td>
         <td th:text="${p.content}"></td>
+        <td>
+            <button
+                    type="button"
+                    th:attr="data-id=${p.id}"
+            >
+                삭제
+            </button>
+        </td>
     </tr>
     </tbody>
 </table>
+<script>
+
+</script>
 </body>
 </html>

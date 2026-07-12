@@ -50,4 +50,10 @@ public interface PostMapper {
     void = 저장 기능만 수행
      */
     void 글쓰기(Post post);
+
+    // 수정기능 삭제기능 또한 int void로 작성가능하며
+    // 다수 수정 삭제가 필요할 경우 int 로 사용하여
+    // 몇 개 수정되었고, 몇 개 삭제되었는지 반환받기도 한다.
+    void 수정하기(Post post);
+    void 삭제하기(Long id); // 삭제의 경우 기본키가 설정된 컬럼 명칭으로 삭제
 }
