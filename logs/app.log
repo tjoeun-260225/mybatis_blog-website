@@ -1504,3 +1504,94 @@ com.project.mybatis_blogwebsite.controller.ApiController#글저장기능(Post) m
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.2.19.jar:6.2.19]
 	... 21 common frames omitted
 
+2026-07-12T12:45:23.180+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Starting MybatisBlogWebsiteApplication using Java 21.0.11 with PID 30180 (D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main started by TJ in D:\김경난\기말과제\mybatis_blog-website)
+2026-07-12T12:45:23.180+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : Running with Spring Boot v3.5.16, Spring v6.2.19
+2026-07-12T12:45:23.180+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] c.p.m.MybatisBlogWebsiteApplication      : No active profile set, falling back to 1 default profile: "default"
+2026-07-12T12:45:23.278+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
+2026-07-12T12:45:23.278+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.project.mybatis_blogwebsite'
+2026-07-12T12:45:23.302+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\PostMapper.class]
+2026-07-12T12:45:23.302+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\김경난\기말과제\mybatis_blog-website\build\classes\java\main\com\project\mybatis_blogwebsite\mapper\UserMapper.class]
+2026-07-12T12:45:23.302+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'postMapper' and 'com.project.mybatis_blogwebsite.mapper.PostMapper' mapperInterface
+2026-07-12T12:45:23.303+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.project.mybatis_blogwebsite.mapper.UserMapper' mapperInterface
+2026-07-12T12:45:23.330+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-07-12T12:45:23.330+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-12T12:45:23.330+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.55]
+2026-07-12T12:45:23.342+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.a.c.c.C.[Tomcat-13].[localhost].[/]    : Initializing Spring embedded WebApplicationContext
+2026-07-12T12:45:23.342+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 161 ms
+2026-07-12T12:45:23.355+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T12:45:23.355+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2026-07-12T12:45:23.356+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-15 - Added connection org.sqlite.jdbc4.JDBC4Connection@5a20a8e2
+2026-07-12T12:45:23.356+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2026-07-12T12:45:23.356+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\schema.sql]
+2026-07-12T12:45:23.361+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: DROP TABLE IF EXISTS posts
+2026-07-12T12:45:23.365+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS posts ( id INTEGER PRIMARY KEY AUTOINCREMENT, title varchar(100) not null, content TEXT NOT NULL )
+2026-07-12T12:45:23.365+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS users ( id INTEGER PRIMARY KEY AUTOINCREMENT, name varchar(100) not null, email TEXT NOT NULL )
+2026-07-12T12:45:23.365+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\schema.sql] in 9 ms.
+2026-07-12T12:45:23.365+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.DataSourceUtils      : Fetching JDBC Connection from DataSource
+2026-07-12T12:45:23.365+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\data.sql]
+2026-07-12T12:45:23.369+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO posts (title, content) VALUES ('첫 번째 글','안녕하세요')
+2026-07-12T12:45:23.372+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO posts (title, content) VALUES ('두 번째 글','mybatis로 연습 중 입니다.')
+2026-07-12T12:45:23.376+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO users (name, email) VALUES ('홍길동','gildong@email.com')
+2026-07-12T12:45:23.380+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : 1 returned as update count for SQL: INSERT INTO users (name, email) VALUES ('김영희','younghee@email.com')
+2026-07-12T12:45:23.380+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\data.sql] in 15 ms.
+2026-07-12T12:45:23.389+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\PostMapper.xml]'
+2026-07-12T12:45:23.393+09:00 DEBUG 30180 --- [mybatis_blog-website] [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\김경난\기말과제\mybatis_blog-website\build\resources\main\mapper\UserMapper.xml]'
+2026-07-12T12:45:23.406+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2026-07-12T12:45:23.411+09:00  WARN 30180 --- [mybatis_blog-website] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'htmlController' method 
+com.project.mybatis_blogwebsite.controller.HtmlController#글작성기능(Post)
+to {POST [/api/posts/new]}: There is already 'apiController' bean method
+com.project.mybatis_blogwebsite.controller.ApiController#글저장기능(Post) mapped.
+2026-07-12T12:45:23.412+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2026-07-12T12:45:23.412+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2026-07-12T12:45:23.412+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-07-12T12:45:23.416+09:00  INFO 30180 --- [mybatis_blog-website] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-07-12T12:45:23.418+09:00 ERROR 30180 --- [mybatis_blog-website] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'htmlController' method 
+com.project.mybatis_blogwebsite.controller.HtmlController#글작성기능(Post)
+to {POST [/api/posts/new]}: There is already 'apiController' bean method
+com.project.mybatis_blogwebsite.controller.ApiController#글저장기능(Post) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1824) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1235) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1201) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:991) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628) ~[spring-context-6.2.19.jar:6.2.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.16.jar:3.5.16]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.16.jar:3.5.16]
+	at com.project.mybatis_blogwebsite.MybatisBlogWebsiteApplication.main(MybatisBlogWebsiteApplication.java:10) ~[main/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.16.jar:3.5.16]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'htmlController' method 
+com.project.mybatis_blogwebsite.controller.HtmlController#글작성기능(Post)
+to {POST [/api/posts/new]}: There is already 'apiController' bean method
+com.project.mybatis_blogwebsite.controller.ApiController#글저장기능(Post) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:677) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:507) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:986) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:237) ~[spring-webmvc-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1871) ~[spring-beans-6.2.19.jar:6.2.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.2.19.jar:6.2.19]
+	... 21 common frames omitted
+
